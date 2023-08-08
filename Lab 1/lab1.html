@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Gagan Sunar">
+  <meta name="Description" content="This page contains all the things I am learning how to create as I learn HTML.">
+  <title>Lab 1</title>
+  <link rel="icon" href="/images/golang.png" type="image/x-icon">
+  <link rel="stylesheet" href="/style/main.css" type="text/css">
+  <style>
+    .paragraph {
+      font-size: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+
+    <h1 style="color: navy;
+    font-family: sans-serif;
+    font-size:50px;
+    text-align:left;">
+      <strong>HTML: HyperText Markup Language</strong>
+    </h1>
+    <nav aria-label="primary-navigation">
+
+      <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-align: justify;
+      "><strong>HTML</strong> (HyperText Markup Language) is the most basic building block of the Web. It defines the
+        meaning and structure of web content. Other technologies besides HTML are generally used to describe a web
+        page's appearance/presentation (CSS) or functionality/behavior (JavaScript).</p>
+        
+      <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-align: justify;
+      ">"Hypertext" refers to links that connect web pages to one another, either within a single website or between
+        websites. Links are a fundamental aspect of the Web. By uploading content to the Internet and linking it to
+        pages created by other people, you become an active participant in the World Wide Web.</p>
+
+
+      <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-align: justify;
+      ">HTML uses "markup" to annotate text, images, and other content for display in a Web browser. HTML markup
+        includes special "elements" such as &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;header&gt;,
+        &lt;footer&gt;,
+        &lt;article&gt;, &lt;section&gt;, &lt;p&gt;, &lt;div&gt;, &lt;span&gt;, &lt;img&gt;, &lt;aside&gt;,
+        &lt;audio&gt;, &lt;canvas&gt;, &lt;datalist&gt;, &lt;details&gt;, &lt;embed&gt;, &lt;nav&gt;, &lt;output&gt;,
+        &lt;progress&gt;, &lt;video&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt; and many others.</p>
+
+
+      <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-align: justify;
+      ">An HTML element is set off from other text in a document by "tags", which consist of the element name
+        surrounded by "&lt;" and "&gt;" . The name of an element inside a tag is case-insensitive. That is, it can be written
+          in uppercase, lowercase, or a mixture. For example, the &lt;title&gt; tag can be written as &lt;Title&gt;,
+          &lt;TITLE&gt;, or in any other way. However, the convention and recommended practice is to write tags in
+          lowercase.</p>
+
+
+          <h2 style="color: navy;
+          font-size: 30px;
+          font-family: Bebas Neue;">Basic structure of html</h2>
+          <code>
+
+        &lt;!DOCTYPE html&gt;<br>
+        &lt;html lang="en"&gt;<br>
+		        &nbsp;&nbsp;&lt;head&gt;<br>
+            &nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+              &nbsp;&nbsp;&nbsp;&lt;title&gt;My first web page&lt;/title&gt;<br>
+            &nbsp;&nbsp;&lt;/head&gt;<br>
+            &nbsp;&nbsp;&lt;body&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello World!&lt;h1&gt;<br>
+            &nbsp;&nbsp;&lt;/body&gt;<br>
+	      &lt;/html&gt;<br>	
+      </code>
+          <br>
+    </nav>
+  </header>
+  <br>
+  <hr>
+
+
+  <section>
+    <table class="tabel1">
+      <thead>
+        <tr>
+          <th scope="col"><strong><u>Example</u></strong></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>(a+b)<sup>2</sup> = a <sup>2</sup> + 2ab + b<sup>2</sup></td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Thank you!</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+  <br>
+  <hr>
+
+
+  <article id="contact">
+    <h2>Information</h2>
+    <P>I'd really like to hear form you!</P>
+    <form action="https://gagansunar.com.np/Lab1.html" method="get">
+      <p>
+        <label for="fullname">fullName:</label>
+        <input type="text" name="fullName" id="fullName" placeholder="Gagan Sunar" autocomplete="on" required autofocus>
+      </p>
+      <p>
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </p>
+      <p>
+        <label for="address">Address:</label>
+        <input type="location" name="address" id="address" required>
+      </p>
+      <p>
+        <label for="phone">contact Number:</label>
+        <input type="tel" name="phone" id="phone" placeholder="9867897698" required>
+      </p>
+      <p>
+        <label for="Hobbies">Hobbies:</label>
+        <select name="Hobbies" id="Hobbies"  required>
+          <optgroup label="sports">
+            <option value="football">Football</option>
+            <option value="basketball">Basketball</option>
+            <option value="cricket">Cricket</option>
+          </optgroup>
+          <option value="Dancing">Dancing</option>
+          <option value="singing">singing</option>
+          <option value="musical" selected>playing musical instruments</option>
+          <option value="other">other</option>
+        </select>
+      </p>
+      <div class="button">
+      <button type="submit">Login</button>
+    </div>
+    </form>
+
+
+    <hr>
+    <br>
+
+
+    <section>
+      <form class="UserLogin">
+        <fieldset>
+          <legend>
+            <h2>UserLogin</h2>
+          </legend>
+
+          <div class="container">
+
+            <form>
+              <p>
+                <label for="Username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+              </p>
+            </form>
+            <P>
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </P>
+          </div>
+          <div class="button">
+            <!-- <input type="submit" value="Login"> -->
+            <button type="submit">Login</button>
+
+          </div>
+
+      </form>
+
+
+      </fieldset>
+      </form>
+    </section>
+    <br>
+    <hr>
+
+
+    <section>
+      <Table class="table-3">
+        <thead>
+          <tr>
+            <th>S.N.</th>
+            <th>Full Name</th>
+            <th>Address</th>
+            <th>Contact Number</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>1.</th>
+            <td>Gagan Sunar</td>
+            <td>Lazimpat</td>
+            <td>9848657634</td>
+            <td>gagan@gmail.com</td>
+          </tr>
+          <tr>
+            <th>2.</th>
+            <td>Gagan Sunar</td>
+            <td>Lazimpat</td>
+            <td>9848657634</td>
+            <td>gagan@gmail.com</td>
+          </tr>
+          <tr>
+            <th>3.</th>
+            <td>Gagan Sunar</td>
+            <td>Lazimpat</td>
+            <td>9848657634</td>
+            <td>gagan@gmail.com</td>
+          </tr>
+          <tr>
+            <th>4.</th>
+            <td>Gagan Sunar</td>
+            <td>Lazimpat</td>
+            <td>9848657634</td>
+            <td>gagan@gmail.com</td>
+          </tr>
+          <tr>
+            <th>5.</th>
+            <td>Gagan Sunar</td>
+            <td>Lazimpat</td>
+            <td>9848657634</td>
+            <td>gagan@gmail.com</td>
+          </tr>
+        </tbody>
+      </Table>
+    </section>
+    <hr>
+    <br>
+
+
+    <section>
+      <caption>
+        <b>Name of student:</b>&nbsp;&nbsp;&nbsp;Gagan Sunar
+        <br>
+      </caption>
+      <caption>
+        <b>Date of Birth:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2061/07/26
+        <br>
+      </caption>
+      <caption>
+        <b>School:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;V.&nbsp;S.&nbsp;NIKETAN
+        SECONDARY SCHOOL,&nbsp;ALOKNAGAR MINBHAWAN,&nbsp;KATHMANDU
+      </caption>
+      <table class="table-4">
+        <thead>
+          <tr>
+            <th>Subject Code</th>
+            <th>Subjects</th>
+            <th>Credit Hour</th>
+            <th>Grade Point</th>
+            <th>Grade</th>
+            <th>Final Grade</th>
+            <th>Remarks</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>004</td>
+            <td>COMPULSORY ENGLISH</td>
+            <td>4.69</td>
+            <td>3.6</td>
+            <td>A+</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>224</td>
+            <td>PRINCIPLE OF ACCOUTNING</td>
+            <td>4.69</td>
+            <td>3.2</td>
+            <td>B+</td>
+            <td>B+</td>
+
+          </tr>
+          <tr>
+            <td>226</td>
+            <td>ECONOMICS</td>
+            <td>4.69</td>
+            <td>2.8</td>
+            <td>B</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>230</td>
+            <td>COMPUTER SCINENCE (TH)</td>
+            <td>3.13</td>
+            <td>2.8</td>
+            <td>B+</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>231</td>
+            <td>COMPUTER SCEINECE (PR)</td>
+            <td>1.56</td>
+            <td>4.0</td>
+            <td>A+</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>908</td>
+            <td>BUSINESS MATHEMATICS</td>
+            <td>4.69</td>
+            <td>4.0</td>
+            <td>A+</td>
+            <td>A</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2"><b>Total</b></td>
+            <td colspan="6"><b>Grade PointAverage(GPA): 3. 50</b></td>
+
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <hr>
+    <br>
+
+
+    <section>
+      <h2>Lists</h2>
+
+      <ul class="box-bullet">
+        <li>
+          <span class="main-heading">Fruits</span>
+          <ul class="circle-bullet">
+            <li>
+              <a href="image/apple.jpg">Apple</a>
+            </li>
+            <li>
+              <a href="image/banana.jpg">Banana</a>
+            </li>
+            <li>
+              <a href="image/pineapple.jpg">Pineapple</a>
+            </li>
+            <li>
+              <a href="image/mango.jpg">Mango</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="box-bullet">
+        <li>
+          <span class="main-heading">Vegetables</span>
+          <ul class="circle-bullet">
+            <li>
+              <a href="/images/cauliflower.jpg">Cauliflower</a>
+            </li>
+            <li>
+              <a href="/images/brinjal.jpg">Brinjle</a>
+            </li>
+            <li>
+              <a href="/images/potato.jpg">Potato</a>
+            </li>
+            <li>
+              <a href="/images/pumpkin.jpg">Pumpkin</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="box-bullet">
+        <li>
+          <span class="main-heading">Meat</span>
+          <ul class="circle-bullet">
+            <li>
+              <a href="/images/chicken.jpg">Chicken</a>
+            </li>
+            <li>
+              <a href="/images/buffalo.jpg">Bufffalo</a>
+            </li>
+            <li>
+              <a href="/images/fish.jpg">Fish</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <hr>
+
+    <section>
+      <h1 style="font-size: 24px;">Inline style</h1>
+    </section>
+    <hr>
+
+    <section>
+      <p class="paragraph"><b>Internal style</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
+        placeat, corrupti dolorem nam nihil ab sapiente, perspiciatis dolor repellendus voluptate facilis eius labore
+        nesciunt ut qui doloremque voluptates saepe! Laudantium!
+        Earum, tempore voluptates amet quaerat quasi rem natus cupiditate reiciendis a iure debitis quos ea sint modi
+        fugiat laborum tenetur aut sit perspiciatis sunt? Quasi soluta aliquam cum illo dolor!</p>
+    </section>
+    <hr>
+
+    <section>
+      <div class="custom">This is a div with a custom font size.(External style)</div>
+      <div>This is a normal div. </div>
+      <hr>
+      <br>
+
+    </section>
+    <section>
+      <form class="quiz">
+        <fieldset>
+          <p>
+            <label for="Username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      </form>
+      <p>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </p>
+      <p>
+        <label for="age">Age</label>
+        <input type="password" id="password" name="password" placeholder="Enter your Age" required>
+      </p>
+      <p>
+        <label for="faculty">Faculty:</label>
+        <select name="faculty" id="faculty">
+          <option value="select faculty">--Select Faculty--</option>
+          <optgroup label="Bca">
+            <option value="first Semester">first Semester</option>
+            <option value="Second Semester">second Semester</option>
+          </optgroup>
+          <optgroup label="Bsc.csit">
+            <option value="first Semester">first Semester</option>
+            <option value="Second Semester">second Semester</option>
+          </optgroup>
+          <option value="other">Other</option>
+        </select>
+      </p>
+
+
+      <h1>Web Technology Quiz Questions:</h1>
+
+
+
+      <p>1.What does HTML stand for?</p>
+      <p>
+        <input type="radio" name="1" id="1" value="1">
+        <label for="1"> a&#41; Hyper Text Markup Language </label>
+      </p>
+
+      <p>
+        <input type="radio" name="1" id="1" value="1">
+        <label for="2">b&#41; Hyperkinks and Text Markup Language</label>
+      </p>
+
+      <p>
+        <input type="radio" name="3" id="3" value="3">
+        <label for="3">c&#41; Home Tool Markup Langugaue</label>
+      </p>
+
+      </p>
+      <br>
+
+      <p> 1.What does HTML stand for?</p>
+      <p>
+        <input type="radio" name="1" id="1" value="1">
+        <label for="1"> a&#41; &lt;h1&gt;</label>
+      </p>
+
+      <p>
+        <input type="radio" name="1" id="1" value="1">
+        <label for="2">b&#41; &lt;h6&gt;</label>
+      </p>
+      <p>
+        <input type="radio" name="3" id="3" value="3">
+        <label for="3">c&#41; &lt;head&gt;</label>
+      </p>
+
+      <br>
+      <button type="submit">Submit</button>
+
+      </fieldset>
+      </form>
+    </section>
+    <hr>
+
+    <section>
+      <h1 style="color: blue;">CSS Combinators (descendant combinators)</h1>
+      <style>
+        li {
+          color: black;
+        }
+
+        #CombinatorsList1 li {
+          color: royalblue;
+        }
+      </style>
+      <ul class="tsummary1">
+        <li>defines the relationship between 2 selectors</li>
+        <li id="CombinatorsList1">
+          there are 4 total
+          <ul>
+            <li>descendant combinators (<code> </code>)</li>
+            <li id="coffee">child combinators (<code>></code>)</li>
+            <li>general sibling combinators (<code>~</code>)</li>
+            <li>adjacent sibling combinators(<code>+</code>)</li>
+          </ul>
+        </li>
+      </ul>
+
+<h1 style="color: blue;">CSS Combinators (child combinators)</h1>
+      <style>
+        li {
+          color: black;
+        }
+
+        .tsummary2 > li {
+          color: royalblue;
+        }
+      </style>
+      <ul class="tsummary2">
+        <li>defines the relationship between 2 selectors</li>
+        <li id="CombinatorsList2">
+          there are 4 total
+          <ul>
+            <li>descendant combinators (<code> </code>)</li>
+            <li id="coffee">child combinators (<code>></code>)</li>
+            <li>general sibling combinators (<code>~</code>)</li>
+            <li>adjacent sibling combinators(<code>+</code>)</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h1 style="color: blue;">CSS Combinators (general sibling combinators )</h1>
+      <style>
+        li {
+          color: black;
+        }
+
+        #coffee3 ~ li {
+          color: royalblue;
+        }
+      </style>
+      <ul class="tsummary3">
+        <li>defines the relationship between 2 selectors</li>
+        <li id="CombinatorsList3">
+          there are 4 total
+          <ul>
+            <li>descendant combinators (<code> </code>)</li>
+            <li id="coffee3">child combinators (<code>></code>)</li>
+            <li>general sibling combinators (<code>~</code>)</li>
+            <li>adjacent sibling combinators(<code>+</code>)</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h1 style="color: blue;">CSS Combinators (adjacent sibling combinators)</h1>
+      <style>
+        li {
+          color: black;
+        }
+
+        #coffee4 + li {
+          color: royalblue;
+        }
+      </style>
+      <ul class="tsummary4">
+        <li>defines the relationship between 2 selectors</li>
+        <li id="CombinatorsList4">
+          there are 4 total
+          <ul>
+            <li>descendant combinators (<code> </code>)</li>
+            <li id="coffee4">child combinators (<code>></code>)</li>
+            <li>general sibling combinators (<code>~</code>)</li>
+            <li>adjacent sibling combinators(<code>+</code>)</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <hr>
+
+    
+      <h1>Pseudo class </h1>
+      <p> A keyword added to a selector that specifies a special state of the selected element(s)</p>
+
+      <h2>Examples</h2>
+      <ul>
+        
+        <li>a:link</li>
+        <a class="a" href="//www.google.com/">Google.com</a>
+        <li>a:visited</li>
+        <a class="b" href="//www.google.com/">Google.com</a>
+        <li>a:hover</li>
+        <a class="c" href="//www.google.com/">Google.com</a>
+        <li>a: active</li>
+        <a class="d" href="//www.google.com/">Google.com</a>
+        
+      </ul>
+    
+    
+</body>
+
+</html>

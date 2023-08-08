@@ -1,0 +1,17 @@
+<!ELEMENT library(books, blocks,librarian)>
+<!ELEMENT books(book+)>
+<!ELEMENT blocks(block+)>
+<!ELEMENT librarian(fname, lname, doe)>
+<!ELEMENT book(bookname+, author+, price+, pubdate+)>
+<!ELEMENT block(blockname+ , height+, width+, totalbook+)
+<!ELEMENT bookname(#PCDATA)>
+<!ELEMENT author(#PCDATA)>
+<!ELEMENT price(#PCDATA)>
+<!ELEMENT pubdate(#PCDATA)>
+<!ELEMENT blockname(#PCDATA)>
+<!ELEMENT height(book+)>
+<!ELEMENT width(#PCDATA)>
+<!ELEMENT totalbooK(#PCDATA)>
+<!ELEMENT fname(#PCDATA)>
+<!ELEMENT lname(#PCDATA)
+<!ELEMENT doe(#PCDATA)>
