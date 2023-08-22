@@ -1,0 +1,47 @@
+input[type="email"],
+input[type="username"],
+input[type="tel"],
+input[type="password"],
+input[type="repassword"] {
+    width: 50%;
+    border: 0;
+    background: #115173;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-radius: 200px;
+    text-align: center;
+    font-size: 30px;
+
+}
+.flat-button {
+    color: #ffd700;
+    font-size: 30px;
+    font-weight: 400;
+    width: 400px;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ffd700;
+    border-radius: 200px;
+    margin-top: 20px;
+    margin-left: 150px;
+    float: left;
+    animation: fadeInAnimation 1s 1.8s backwards;
+    white-space: nowrap;
+
+    &:hover {
+      background: #ffd700;
+      color: #ffd700;
+    }
+  }
+label{
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+}
+span{
+    color:red;
+}
