@@ -1,7 +1,7 @@
 
 <?php
 require('dbconnect.php');
-/*
+
 if(isset($_POST['submit'])){
   
     $username=$_POST['username'];
@@ -14,7 +14,7 @@ if(isset($_POST['submit'])){
     if($password != $repassword){
         echo "Password and Confirm Password not Matched";
     } else {    
-       // echo $username."<br>".$email."<br>".$mobile."<br>".$password."<br>".$email."<br>".$mobile."<br>";
+        echo $username."<br>".$email."<br>".$mobile."<br>".$password."<br>".$email."<br>".$mobile."<br>";
         require('dbconnect.php');
         $sql = "INSERT INTO `bca2078` 
             (`ID`,`username`,`password`,`mobile`,`email`,`userlevel`)
@@ -26,9 +26,9 @@ if(isset($_POST['submit'])){
 }
 */
 $sql="SELECT * FROM bca2078";
-//$query=$conn->query($sql);
+$query=$conn->query($sql);
 echo $sql;
-/*
+
 if($query->num_rows !=0){
     
     echo "<table>";
@@ -45,5 +45,5 @@ if($query->num_rows !=0){
     }
     
 } 
-*/
+
 ?>
