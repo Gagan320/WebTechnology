@@ -1,0 +1,91 @@
+table, tr, th, td, caption {
+    border: 1px solid #000;
+    font-family: 'courier new' 'courier New', courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+.box-bullet {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .box-bullet > li:before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-right: 5px;
+    background-color: black;
+  }
+  
+  .circle-bullet {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .circle-bullet > li:before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-right: 5px;
+    border: 1px solid black;
+    border-radius: 50%;
+  }
+  
+  .custom{
+    font-size: 20px;
+    color:blue;
+  }
+  
+  
+ /*  p::first-letter{
+    color:navy;
+    font-size: 25px;
+    text-algin: left;
+  } */
+  
+  .quiz {
+    background-color:rgb(201, 201, 225);
+    
+    font-size: 20px;
+    text-size-adjust: 20px;
+    width:500px;
+    
+
+  }
+  .UserLogin {
+    width: 600px;
+
+  }
+  .button{
+    text-align: center;
+}
+mark{ 
+  color: rgb(43, 43, 93);
+
+}
+h1.page-title {
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.containerbox{
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    display: block;
+    float: left;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    height: 4791.8px;
+    line-height: 22px;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    width: 877.5px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+
+}
